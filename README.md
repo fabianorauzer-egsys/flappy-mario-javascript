@@ -1,2 +1,2 @@
 # flappy-mario-javascript
-A simple mario game in flappy version
+A simple Mario game in flappy version
