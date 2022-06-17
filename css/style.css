@@ -58,6 +58,13 @@
     animation: peach-animation 7s infinite linear;
 }
 
+.koopaLatiku {
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    animation: koopaLatiku-animation 7s infinite linear;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
@@ -117,6 +124,15 @@
 }
 
 @keyframes peach-animation {
+    from {
+        right: -60px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes koopaLatiku-animation {
     from {
         right: -60px;
     }

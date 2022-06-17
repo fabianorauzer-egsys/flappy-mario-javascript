@@ -4,6 +4,7 @@ const clouds = document.querySelector('.clouds');
 const yoshi = document.querySelector('.yoshi');
 const castle = document.querySelector('.castle');
 const peach = document.querySelector('.peach');
+const koopaLatiku = document.querySelector('.koopaLatiku');
 
 
 const jump = () => {
@@ -22,6 +23,7 @@ const loop = setInterval(() => {
     const yoshiPosition = yoshi.offsetLeft;
     const castlePosition = castle.offsetLeft;
     const peachPosition = peach.offsetLeft;
+    const koopaLatikuPosition = koopaLatiku.offsetLeft;
 
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
         pipe.style.animation = 'none';
@@ -45,6 +47,9 @@ const loop = setInterval(() => {
 
         castle.style.animation = 'none';
         castle.style.left = `${castlePosition}px`;
+
+        koopaLatiku.style.animation = 'none';
+        koopaLatiku.style.left = `${koopaLatikuPosition}px`;
 
         mario.src = './images/game-over.png';
         mario.style.width = '65px';
