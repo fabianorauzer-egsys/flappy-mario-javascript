@@ -5,6 +5,7 @@ const yoshi = document.querySelector('.yoshi');
 const castle = document.querySelector('.castle');
 const peach = document.querySelector('.peach');
 const koopaLatiku = document.querySelector('.koopaLatiku');
+const browser = document.querySelector('.browser');
 
 
 const jump = () => {
@@ -54,6 +55,8 @@ const loop = setInterval(() => {
         mario.src = './images/game-over.png';
         mario.style.width = '65px';
         mario.style.marginLeft = '50px';
+
+        browser.style.display = 'block';
 
         clearInterval(loop);
     }

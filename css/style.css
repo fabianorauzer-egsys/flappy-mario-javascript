@@ -65,6 +65,14 @@
     animation: koopaLatiku-animation 7s infinite linear;
 }
 
+.browser {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 400px;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
