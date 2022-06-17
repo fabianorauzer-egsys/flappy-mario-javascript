@@ -5,12 +5,13 @@
 }
 
 .game-board{
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 15px solid rgb(35, 160, 35);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 .pipe {
@@ -28,6 +29,33 @@
 
 .jump {
     animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: cloud-animation 20s infinite linear;
+}
+
+.yoshi {
+    position: absolute;
+    bottom: -10px;
+    width: 60px;
+    animation: yoshi-animation 8s infinite linear;
+}
+
+.castle {
+    position: absolute;
+    bottom: -60px;
+    width: 180px;
+    animation: castle-animation 10s infinite linear;
+}
+
+.peach {
+    position: absolute;
+    bottom: -8px;
+    width: 120px;
+    animation: peach-animation 7s infinite linear;
 }
 
 @keyframes pipe-animation {
@@ -58,5 +86,41 @@
 
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes cloud-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes yoshi-animation {
+    from {
+        right: -30px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes castle-animation {
+    from {
+        right: -150px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes peach-animation {
+    from {
+        right: -60px;
+    }
+    to {
+        right: 100%;
     }
 }
